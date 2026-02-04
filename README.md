@@ -82,12 +82,22 @@ where python
 > should output your project directory
 ```
 
-3. Run the FastAPI Project:
+3. Once verified that Python is running locally to project, install the packages with:
+```powershell
+uv sync
+```
+
+4. And sync it with lockfile always(everytime a package is added, you must sync and lock):
+```powershell
+uv lock
+```
+
+5. Run the FastAPI Project:
 ```powershell
 uv run fastapi dev main2.py
 ```
 
-4. If success, open a browser and paste the port in terminal:
+6. If success, open a browser and paste the port in terminal:
 ```
 localhost:8000
 or
