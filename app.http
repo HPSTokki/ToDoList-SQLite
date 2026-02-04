@@ -1,0 +1,17 @@
+@url=http://localhost:8000
+
+### GET Tasks
+GET {{url}}/task
+
+### DELETE Tasks
+DELETE {{url}}/task/1
+
+### UPD Tasks
+PUT {{url}}/task/0
+Content-Type: application/json
+
+{
+    "id": 0,
+    "task_name": "Eat Meal",
+    "isCompleted": true
+}
